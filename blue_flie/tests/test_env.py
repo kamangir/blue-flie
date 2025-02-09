@@ -10,4 +10,4 @@ def test_required_env():
 
 
 def test_blue_flie_env():
-    assert True
+    assert env.BLUE_FLIE_CONFIG
