@@ -4,11 +4,11 @@ ICON = "🦋"
 
 DESCRIPTION = f"{ICON} flying with AI."
 
-VERSION = "4.5.1"
+VERSION = "4.6.1"
 
 REPO_NAME = "blue-flie"
 
-MARQUEE = "https://github.com/kamangir/assets/raw/main/blue-flie/marquee.png?raw=true"
+MARQUEE = "https://www.bitcraze.io/images/documentation/overview/system_overview.jpg"
 
 ALIAS = "@flie"
 
