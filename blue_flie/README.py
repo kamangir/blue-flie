@@ -10,7 +10,7 @@ items = README.Items(
         {
             "name": "blue-flie",
             "marquee": "https://www.bitcraze.io/images/documentation/overview/system_overview.jpg",
-            "description": "starting off on a [Crazyflie 2.1+](https://www.bitcraze.io/products/crazyflie-2-1-plus/)...",
+            "description": "[Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/)",
         },
     ]
 )
