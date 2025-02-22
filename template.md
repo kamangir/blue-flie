@@ -15,7 +15,7 @@ pip install blue-flie
 --help-- blue_flie toolbelt install
 
 - [Manuall Installation](https://www.bitcraze.io/documentation/repository/toolbelt/master/installation/)
-- [github/bitcraze/toolbelt](https://github.com/bitcraze/toolbelt)
+- repo: [github/bitcraze/toolbelt](https://github.com/bitcraze/toolbelt)
 
 
 ---
