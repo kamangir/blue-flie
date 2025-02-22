@@ -10,6 +10,8 @@ pip install blue-flie
 
 ## Toolbelt
 
+> ... used to develop, test and build Bitcraze modules ... will ... find the tool in ... the module [in] ... the working directory ... [and will execute them] ... in ... a docker container based on the ... requirements ... in ... module.json ...
+
 --help-- blue_flie toolbelt install
 
 - [Manuall Installation](https://www.bitcraze.io/documentation/repository/toolbelt/master/installation/)
