@@ -18,6 +18,8 @@ pip install blue-flie
 - repo: [github/bitcraze/toolbelt](https://github.com/bitcraze/toolbelt)
 
 
+🔥
+
 ---
 
 - Hardware: [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/), [getting started](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyflie-brushless/)
