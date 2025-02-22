@@ -17,6 +17,9 @@ function test_blue_flie_help() {
         "@flie test" \
         "@flie test list" \
         \
+        "toolbelt" \
+        "toolbelt install" \
+        \
         "blue_flie"; do
         abcli_eval ,$options \
             abcli_help $module

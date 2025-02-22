@@ -10,6 +10,19 @@ pip install blue-flie
 | --- |
 | [`blue-flie`](#) [![image](https://www.bitcraze.io/images/documentation/overview/system_overview.jpg)](#) [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/) |
 
+## Toolbelt
+
+```bash
+toolbelt \
+	install \
+	[dryrun]
+ . install toolbelt.
+```
+
+- [Manuall Installation](https://www.bitcraze.io/documentation/repository/toolbelt/master/installation/)
+- [github/bitcraze/toolbelt](https://github.com/bitcraze/toolbelt)
+
+
 ---
 
 - Hardware: [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/), [getting started](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyflie-brushless/)
@@ -23,4 +36,4 @@ pip install blue-flie
 
 [![pylint](https://github.com/kamangir/blue-flie/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-flie/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-flie/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-flie.svg)](https://pypi.org/project/blue-flie/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/blue-flie)](https://pypistats.org/packages/blue-flie)
 
-built by 🌀 [`blue_options-4.223.1`](https://github.com/kamangir/awesome-bash-cli), based on 🦋 [`blue_flie-4.9.1`](https://github.com/kamangir/blue-flie).
+built by 🌀 [`blue_options-4.225.1`](https://github.com/kamangir/awesome-bash-cli), based on 🦋 [`blue_flie-4.10.1`](https://github.com/kamangir/blue-flie).
