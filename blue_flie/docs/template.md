@@ -22,3 +22,5 @@ Alias is already set in [alias.sh](./blue_flie/.abcli/alias.sh).
 - Hardware: [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/), [getting started](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyflie-brushless/)
 - https://www.bitcraze.io/documentation/system/
 - https://www.bitcraze.io/2017/07/crazyflie-based-quadcopter-with-raspberrypi-camera/
+
+![image](https://www.bitcraze.io/images/documentation/overview/system_overview.jpg)

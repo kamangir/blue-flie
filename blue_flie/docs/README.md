@@ -28,3 +28,4 @@ Alias is already set in [alias.sh](./blue_flie/.abcli/alias.sh).
 - https://www.bitcraze.io/documentation/system/
 - https://www.bitcraze.io/2017/07/crazyflie-based-quadcopter-with-raspberrypi-camera/
 
+![image](https://www.bitcraze.io/images/documentation/overview/system_overview.jpg)
