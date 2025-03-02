@@ -6,43 +6,13 @@
 pip install blue-flie
 ```
 
-|   |
-| --- |
-| [`blue-flie`](#) [![image](https://www.bitcraze.io/images/documentation/overview/system_overview.jpg)](#) [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/) |
-
-## Toolbelt
-
-> ... used to develop, test and build Bitcraze modules ... will ... find the tool in ... the module [in] ... the working directory ... [and will execute them] ... in ... a docker container based on the ... requirements ... in ... module.json ...
-
-```bash
-toolbelt \
-	install \
-	[dryrun]
- . install toolbelt.
-```
-
-Alias is already set in [alias.sh](./blue_flie/.abcli/alias.sh).
-
-- [Manuall Installation](https://www.bitcraze.io/documentation/repository/toolbelt/master/installation/)
-- repo: [github/bitcraze/toolbelt](https://github.com/bitcraze/toolbelt)
-
-
-## Radio
-
-- [Crazyradio 2.0](https://www.bitcraze.io/products/crazyradio-2-0/)
-- Library: [Crazyflie python library (cflib)](https://github.com/bitcraze/crazyflie-lib-python), [Installation](https://github.com/bitcraze/crazyflie-lib-python/blob/master/docs/installation/install.md)
-
-🔥 [dev notes](https://arash-kamangir.medium.com/%EF%B8%8F-conversations-with-ai-455-2d4ee6109352)
-
----
-
-- Hardware: [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/), [getting started](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyflie-brushless/)
-- https://www.bitcraze.io/documentation/system/
-- https://www.bitcraze.io/2017/07/crazyflie-based-quadcopter-with-raspberrypi-camera/
+|   |   |
+| --- | --- |
+| [`swarm simulation`](./blue_flie/sim/docs) [![image](https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true)](./blue_flie/sim/docs) Simulating harm/cost for swarms of AI IEDs. | [`blue-flie`](./blue_flie/docs) [![image](https://www.bitcraze.io/images/documentation/overview/system_overview.jpg)](./blue_flie/docs) [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/) |
 
 ---
 
 
 [![pylint](https://github.com/kamangir/blue-flie/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-flie/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-flie/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-flie.svg)](https://pypi.org/project/blue-flie/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/blue-flie)](https://pypistats.org/packages/blue-flie)
 
-built by 🌀 [`blue_options-4.227.1`](https://github.com/kamangir/awesome-bash-cli), based on 🦋 [`blue_flie-4.17.1`](https://github.com/kamangir/blue-flie).
+built by 🌀 [`blue_options-4.227.1`](https://github.com/kamangir/awesome-bash-cli), based on 🦋 [`blue_flie-4.18.1`](https://github.com/kamangir/blue-flie).
