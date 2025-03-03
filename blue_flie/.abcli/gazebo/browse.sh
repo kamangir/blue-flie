@@ -6,7 +6,6 @@ function blue_flie_gazebo_browse() {
     local do_install=$(abcli_option_int "$options" install 0)
     local do_download=$(abcli_option_int "$options" download $(abcli_not $do_dryrun))
     local do_upload=$(abcli_option_int "$options" upload $(abcli_not $do_dryrun))
-    local filename=$(abcli_option "$options" filename world.sdf)
     local ingest_pictures=$(abcli_option_int "$options" pictures 1)
     local generate_gif=$(abcli_option_int "$options" gif 1)
 
@@ -19,24 +18,22 @@ function blue_flie_gazebo_browse() {
     local object_path=$ABCLI_OBJECT_ROOT/$object_name
     mkdir -pv $object_path
 
-    local browse_options=$3
-    local do_server=$(abcli_option_int "$browse_options" server 0)
-    local do_gui=$(abcli_option_int "$browse_options" gui $(abcli_not $do_server))
-
     [[ "$do_download" == 1 ]] &&
         abcli_download - $object_name
 
-    local mode
-    if [[ "$do_gui" == 1 ]]; then
-        mode="-g"
-    elif [[ "$do_server" == 1 ]]; then
-        mode="-s"
-    fi
+    local filename=$(find "$object_path" -name '*.sdf' -print | head -n 1)
+    filename=$(basename "$filename")
+    filename=$(abcli_option "$options" filename $filename)
 
-    abcli_eval dryrun=$do_dryrun,path=$object_path \
-        gz sim $mode $filename \
-        "${@:4}"
+    pushd $object_path >/dev/null
+    gz sim -s $filename &
+    pid=$!
+
+    gz sim -g
     [[ $? -ne 0 ]] && return 1
+    popd >/dev/null
+
+    kill $pid
 
     [[ "$ingest_pictures" == 1 ]] &&
         mv -v \

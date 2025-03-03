@@ -2,31 +2,45 @@
 
 ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
 
-🔥
+```
+@gazebo ingest list
+```
 
 ```bash
-@select sim-$(@@timestamp)
-@open - .
-cp -v ../2025-03-02-15-20-03-vb5bvs/world.sdf ./
+runme() {
+    local example_name=${1:-tracked_vehicle_simple}
 
-@gazebo browse - . gui
+    local object_name=sim-$example_name-$(@@timestamp)
 
-# second terminal
-@gazebo browse - . server
+    @gazebo \
+        ingest - \
+        $example_name \
+        $object_name
 
-# simulate and capture
+    @open - \
+        $object_name
 
-# Crtl+C
+    @gazebo browse - \
+        $object_name
 
-@assets publish extensions=gif,push .
+    # simulate and capture
+
+    # Crtl+C
+
+    @assets publish \
+        extensions=gif,push \
+        $object_name
+}
+
+runme actor
 ```
 
 
-[sim-2025-03-02-otpupk](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-2025-03-02-otpupk.tar.gz)
+[sim-actor-2025-03-02-0u09ml](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-actor-2025-03-02-0u09ml.tar.gz)
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-2025-03-02-otpupk/sim-2025-03-02-otpupk.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-actor.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-actor-2025-03-02-0u09ml/sim-actor-2025-03-02-0u09ml.gif?raw=true) |
 
 🔥
 

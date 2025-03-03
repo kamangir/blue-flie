@@ -16,3 +16,10 @@ function blue_flie_gazebo_install() {
     abcli_eval ,$options \
         brew install gz-harmonic
 }
+
+# https://gazebosim.org/docs/all/getstarted/
+function abcli_install_blue_flie_gazebo() {
+    abcli_git_clone https://github.com/gazebosim/gz-sim.git
+}
+
+abcli_install_module blue_flie_gazebo 1.1.1
