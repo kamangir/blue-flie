@@ -29,7 +29,8 @@ items = README.Items(
         },
         {
             "name": "blue-amo",
-            "marquee": "https://github.com/kamangir/assets/raw/main/blue-amo-2025-02-04-nwb6nc/stitching_the_frames-2.png?raw=true",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-amo-2025-02-04-nwb6nc/generating_frame_012.png?raw=true",
+            "description": "concept development with AI",
             "url": "https://github.com/kamangir/blue-assistant/blob/main/blue_assistant/script/repository/blue_amo/README.md",
         },
     ]
