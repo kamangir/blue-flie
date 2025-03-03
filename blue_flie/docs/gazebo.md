@@ -24,6 +24,6 @@ cp -v ../2025-03-02-15-20-03-vb5bvs/world.sdf ./
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/blue-flie/gazebo.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-2025-03-02-otpupk/sim-2025-03-02-otpupk.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-2025-03-02-otpupk/sim-2025-03-02-otpupk.gif?raw=true) |
 
 🔥

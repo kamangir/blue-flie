@@ -25,6 +25,6 @@ object:::get:::object_name
 
 | | |
 |-|-|
-| assets:::blue-flie/blue-flie/gazebo.png | assets:::get:::object_name/get:::object_name.gif |
+| assets:::blue-flie/gazebo.png | assets:::get:::object_name/get:::object_name.gif |
 
 🔥
