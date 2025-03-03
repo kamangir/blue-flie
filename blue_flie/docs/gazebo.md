@@ -39,17 +39,15 @@ runme() {
         $object_name
 }
 
-runme actor
+runme wind
 ```
 
-🔥
 
-
-[sim-actor-2025-03-03-oanpvf](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-actor-2025-03-03-oanpvf.tar.gz)
+[sim-wind-2025-03-03-de0n62](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-wind-2025-03-03-de0n62.tar.gz)
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-actor.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-actor-2025-03-03-oanpvf/sim-actor-2025-03-03-oanpvf.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-wind.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-wind-2025-03-03-de0n62/sim-wind-2025-03-03-de0n62.gif?raw=true) |
 
 ---
 

@@ -39,18 +39,16 @@ runme() {
         $object_name
 }
 
-runme actor
+runme wind
 ```
 
-🔥
-
-set:::object_name sim-actor-2025-03-03-oanpvf
+set:::object_name sim-wind-2025-03-03-de0n62
 
 object:::get:::object_name
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo-actor.png | assets:::get:::object_name/get:::object_name.gif |
+| assets:::blue-flie/gazebo-wind.png | assets:::get:::object_name/get:::object_name.gif |
 
 ---
 

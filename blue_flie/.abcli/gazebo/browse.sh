@@ -25,15 +25,19 @@ function blue_flie_gazebo_browse() {
     filename=$(basename "$filename")
     filename=$(abcli_option "$options" filename $filename)
 
-    pushd $object_path >/dev/null
-    gz sim -s $filename &
-    pid=$!
+    if [[ "$abcli_is_github_workflow" == true ]]; then
+        abcli_log_warning "will not run gazebo."
+    else
+        pushd $object_path >/dev/null
+        gz sim -s $filename &
+        pid=$!
 
-    gz sim -g
-    [[ $? -ne 0 ]] && return 1
-    popd >/dev/null
+        gz sim -g
+        [[ $? -ne 0 ]] && return 1
+        popd >/dev/null
 
-    kill $pid
+        kill $pid
+    fi
 
     [[ "$ingest_pictures" == 1 ]] &&
         mv -v \
