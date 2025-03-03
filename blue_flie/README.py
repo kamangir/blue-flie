@@ -16,7 +16,7 @@ items = README.Items(
             "url": "./blue_flie/docs/gazebo.md",
         },
         {
-            "name": "blue-flie",
+            "name": "Crazyflie",
             "marquee": "https://www.bitcraze.io/images/documentation/overview/system_overview.jpg",
             "description": "[Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/)",
             "url": "./blue_flie/docs/crazyflie.md",
