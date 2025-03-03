@@ -13,13 +13,13 @@ items = README.Items(
             "name": "swarm simulation",
             "marquee": "https://github.com/kamangir/assets/blob/main/gazebo-gif-1/gazebo-gif-1.gif?raw=true",
             "description": "Simulating harm/cost for swarms of AI IEDs with [Gazebo](https://gazebosim.org/home).",
-            "url": "./blue_flie/gazebo/docs",
+            "url": "./blue_flie/docs/gazebo.md",
         },
         {
             "name": "blue-flie",
             "marquee": "https://www.bitcraze.io/images/documentation/overview/system_overview.jpg",
             "description": "[Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/)",
-            "url": "./blue_flie/docs",
+            "url": "./blue_flie/docs/crazyflie.md",
         },
         {
             "name": "blue-beast",
@@ -54,10 +54,10 @@ def build():
                 "path": "..",
             },
             {
-                "path": "docs",
+                "path": "docs/crazyflie.md",
             },
             {
-                "path": "gazebo/docs",
+                "path": "docs/gazebo.md",
             },
         ]
     )
