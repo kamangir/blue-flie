@@ -8,7 +8,7 @@ def help_browse(
     mono: bool,
 ) -> str:
     options = xtra(
-        "dryrun,~download,filename=<filename.sdf>,install,~pictures,~upload",
+        "dryrun,~download,filename=<filename.sdf>,~gif,install,~pictures,~upload",
         mono=mono,
     )
 

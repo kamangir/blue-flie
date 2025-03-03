@@ -8,6 +8,7 @@ function blue_flie_gazebo_browse() {
     local do_upload=$(abcli_option_int "$options" upload $(abcli_not $do_dryrun))
     local filename=$(abcli_option "$options" filename world.sdf)
     local ingest_pictures=$(abcli_option_int "$options" pictures 1)
+    local generate_gif=$(abcli_option_int "$options" gif 1)
 
     if [[ "$do_install" == 1 ]]; then
         blue_flie_gazebo_install
@@ -41,6 +42,16 @@ function blue_flie_gazebo_browse() {
         mv -v \
             $HOME/.gz/gui/pictures/*.png \
             $object_path
+
+    if [[ "$generate_gif" == 1 ]]; then
+        local scale
+        for scale in 1 2 4; do
+            abcli_gif ~download,~upload,dryrun=$do_dryrun \
+                $object_name \
+                --scale $scale
+            [[ $? -ne 0 ]] && return 1
+        done
+    fi
 
     abcli_mlflow_tags_set \
         $object_name \
