@@ -2,8 +2,6 @@
 
 ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
 
-🔥
-
 ```bash
 @select sim-$(@@timestamp)
 @open - .
@@ -28,9 +26,3 @@ object:::get:::object_name
 | | |
 |-|-|
 | assets:::blue-flie/gazebo.png | assets:::get:::object_name/get:::object_name.gif |
-
-🔥
-
----
-
-- [round 1](./gazebo-01.md)

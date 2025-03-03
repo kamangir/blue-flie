@@ -2,8 +2,6 @@
 
 ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
 
-🔥
-
 ```bash
 @select sim-$(@@timestamp)
 @open - .
@@ -21,16 +19,9 @@ cp -v ../2025-03-02-15-20-03-vb5bvs/world.sdf ./
 @assets publish extensions=gif,push .
 ```
 
-set:::object_name sim-2025-03-02-otpupk
 
-object:::get:::object_name
+[sim-2025-03-02-otpupk](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-2025-03-02-otpupk.tar.gz)
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo.png | assets:::get:::object_name/get:::object_name.gif |
-
-🔥
-
----
-
-- [round 1](./gazebo-01.md)
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-2025-03-02-otpupk/sim-2025-03-02-otpupk.gif?raw=true) |
