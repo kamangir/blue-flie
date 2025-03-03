@@ -4,7 +4,7 @@ ICON = "🦋"
 
 DESCRIPTION = f"{ICON} flying with AI."
 
-VERSION = "4.24.1"
+VERSION = "4.26.1"
 
 REPO_NAME = "blue-flie"
 
