@@ -17,6 +17,10 @@ function test_blue_flie_help() {
         "@flie test" \
         "@flie test list" \
         \
+        "@gazebo" \
+        "@gazebo browse" \
+        "@gazebo install" \
+        \
         "toolbelt" \
         "toolbelt install" \
         \

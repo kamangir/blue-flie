@@ -2,6 +2,8 @@
 
 alias @flie=blue_flie
 
+alias @gazebo=blue_flie_gazebo
+
 alias toolbelt=blue_flie_toolbelt
 
 # https://www.bitcraze.io/documentation/repository/toolbelt/master/installation/#installation
