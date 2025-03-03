@@ -1,4 +1,4 @@
-# Swarm Simulation 🔥
+# Swarm Simulation
 
 ℹ️ Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).
 
