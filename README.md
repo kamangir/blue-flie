@@ -10,12 +10,23 @@ pip install blue-flie
 graph LR
     gazebo_browse["@gazebo<br>browse -<br>&lt;object-name&gt;<br>gui|server"]
 
+    gazebo_ingest_list["@gazebo<br>ingest<br>list"]
+
+    gazebo_ingest["@gazebo<br>ingest -<br>&lt;example-name&gt;<br>&lt;object-name&gt;<br>browse"]
+
+    examples["examples"]:::folder
     object["📁 object"]:::folder
     UI["🖥️ UI"]:::folder
 
     object --> gazebo_browse
     gazebo_browse --> object
     gazebo_browse --> UI
+
+    gazebo_ingest_list --> examples 
+
+    examples --> gazebo_ingest
+    gazebo_ingest --> object
+    gazebo_ingest --> gazebo_browse
 
     classDef folder fill:#999,stroke:#333,stroke-width:2px;
 ```
@@ -30,4 +41,4 @@ graph LR
 
 [![pylint](https://github.com/kamangir/blue-flie/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-flie/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-flie/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-flie.svg)](https://pypi.org/project/blue-flie/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/blue-flie)](https://pypistats.org/packages/blue-flie)
 
-built by 🌀 [`blue_options-4.227.1`](https://github.com/kamangir/awesome-bash-cli), based on 🦋 [`blue_flie-4.54.1`](https://github.com/kamangir/blue-flie).
+built by 🌀 [`blue_options-4.227.1`](https://github.com/kamangir/awesome-bash-cli), based on 🦋 [`blue_flie-4.55.1`](https://github.com/kamangir/blue-flie).
