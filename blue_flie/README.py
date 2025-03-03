@@ -56,8 +56,11 @@ def build():
             {
                 "path": "docs/crazyflie.md",
             },
+        ]
+        + [
             {
-                "path": "docs/gazebo.md",
-            },
+                "path": f"docs/gazebo{suffix}.md",
+            }
+            for suffix in ["", "-01", "-02"]
         ]
     )

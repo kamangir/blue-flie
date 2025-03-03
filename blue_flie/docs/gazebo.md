@@ -1,29 +1,63 @@
-# Swarm Simulation
+# Swarm Simulation 🔥
 
 ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
 
 ```bash
-@select sim-$(@@timestamp)
-@open - .
-cp -v ../2025-03-02-15-20-03-vb5bvs/world.sdf ./
+@gazebo ingest list
+```
+```bash
+⚙️  ls -1 /Users/kamangir/git/gz-sim/examples/worlds
+3k_shapes.sdf
+CMakeLists.txt
+ackermann_steering.sdf
+acoustic_comms.sdf
+acoustic_comms_demo.sdf
+acoustic_comms_moving_targets.sdf
+acoustic_comms_packet_collision.sdf
+acoustic_comms_propagation.sdf
+actor.sdf
+...
+```
 
-@gazebo browse - . gui
+🔥
 
-# second terminal
-@gazebo browse - . server
+```bash
+runme() {
+    local example_name=${1:-tracked_vehicle_simple}
 
-# simulate and capture
+    local object_name=sim-$example_name-$(@@timestamp)
 
-# Crtl+C
+    @gazebo \
+        ingest - \
+        $example_name \
+        $object_name
 
-@assets publish extensions=gif,push .
+    @open - \
+        $object_name
+
+    @gazebo browse - \
+        $object_name
+
+    # simulate and capture
+
+    # Crtl+C
+
+    @assets publish \
+        extensions=gif,push \
+        $object_name
+}
+
+runme actor
 ```
 
 
-[sim-2025-03-02-otpupk](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-2025-03-02-otpupk.tar.gz)
+[sim-actor-2025-03-02-0u09ml](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-actor-2025-03-02-0u09ml.tar.gz)
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-2025-03-02-otpupk/sim-2025-03-02-otpupk.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-actor.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-actor-2025-03-02-0u09ml/sim-actor-2025-03-02-0u09ml.gif?raw=true) |
 
-🔥
+---
+
+- [round 1](./gazebo-01.md)
+- [round 2](./gazebo-02.md)

@@ -1,4 +1,4 @@
-# Swarm Simulation 🔥
+# Swarm Simulation - round 2
 
 ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
 
@@ -19,7 +19,6 @@ actor.sdf
 ...
 ```
 
-🔥
 
 ```bash
 runme() {
@@ -61,4 +60,3 @@ object:::get:::object_name
 ---
 
 - [round 1](./gazebo-01.md)
-- [round 2](./gazebo-02.md)

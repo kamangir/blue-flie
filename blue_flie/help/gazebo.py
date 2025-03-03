@@ -12,17 +12,48 @@ def help_browse(
         mono=mono,
     )
 
-    browse_options = "gui | server"
-
     return show_usage(
         [
             "@gazebo",
             "browse",
             f"[{options}]",
             "[-|<object-name>]",
-            f"[{browse_options}]",
         ],
         "browse <object-name> in gazebo.",
+        mono=mono,
+    )
+
+
+def help_ingest(
+    tokens: List[str],
+    mono: bool,
+) -> str:
+    options = xtra("dryrun,~upload", mono=mono)
+
+    return show_usage(
+        [
+            "@gazebo",
+            "ingest",
+            f"[{options}]",
+            "<example-name>",
+            "[-|<object-name>]",
+        ],
+        "ingest <example-name> -> <object-name>.",
+        mono=mono,
+    )
+
+
+def help_ingest_list(
+    tokens: List[str],
+    mono: bool,
+) -> str:
+    return show_usage(
+        [
+            "@gazebo",
+            "ingest",
+            "list",
+        ],
+        "list gazebo examples.",
         mono=mono,
     )
 
@@ -46,5 +77,9 @@ def help_install(
 
 help_functions = {
     "browse": help_browse,
+    "ingest": {
+        "": help_ingest,
+        "list": help_ingest_list,
+    },
     "install": help_install,
 }

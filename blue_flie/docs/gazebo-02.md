@@ -1,4 +1,4 @@
-# Swarm Simulation 🔥
+# Swarm Simulation - round 2
 
 ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
 
@@ -19,7 +19,6 @@ actor.sdf
 ...
 ```
 
-🔥
 
 ```bash
 runme() {
@@ -50,15 +49,14 @@ runme() {
 runme actor
 ```
 
-set:::object_name sim-actor-2025-03-02-0u09ml
 
-object:::get:::object_name
+[sim-actor-2025-03-02-0u09ml](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-actor-2025-03-02-0u09ml.tar.gz)
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo-actor.png | assets:::get:::object_name/get:::object_name.gif |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-actor.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-actor-2025-03-02-0u09ml/sim-actor-2025-03-02-0u09ml.gif?raw=true) |
 
 ---
 
 - [round 1](./gazebo-01.md)
-- [round 2](./gazebo-02.md)
+

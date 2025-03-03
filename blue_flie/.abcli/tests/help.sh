@@ -19,6 +19,8 @@ function test_blue_flie_help() {
         \
         "@gazebo" \
         "@gazebo browse" \
+        "@gazebo ingest" \
+        "@gazebo ingest list" \
         "@gazebo install" \
         \
         "toolbelt" \
