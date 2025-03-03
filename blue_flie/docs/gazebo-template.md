@@ -2,9 +2,24 @@
 
 ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
 
-```
+```bash
 @gazebo ingest list
 ```
+```bash
+⚙️  ls -1 /Users/kamangir/git/gz-sim/examples/worlds
+3k_shapes.sdf
+CMakeLists.txt
+ackermann_steering.sdf
+acoustic_comms.sdf
+acoustic_comms_demo.sdf
+acoustic_comms_moving_targets.sdf
+acoustic_comms_packet_collision.sdf
+acoustic_comms_propagation.sdf
+actor.sdf
+...
+```
+
+🔥
 
 ```bash
 runme() {
@@ -42,8 +57,6 @@ object:::get:::object_name
 | | |
 |-|-|
 | assets:::blue-flie/gazebo-actor.png | assets:::get:::object_name/get:::object_name.gif |
-
-🔥
 
 ---
 

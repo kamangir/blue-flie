@@ -1,4 +1,4 @@
-# Swarm Simulation
+# Swarm Simulation - round 1
 
 ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
 

@@ -61,6 +61,6 @@ def build():
             {
                 "path": f"docs/gazebo{suffix}.md",
             }
-            for suffix in ["", "-01"]
+            for suffix in ["", "-01", "-02"]
         ]
     )
