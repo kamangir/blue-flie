@@ -6,8 +6,6 @@
 pip install blue-flie
 ```
 
---table--
-
 ```mermaid
 graph LR
     gazebo_browse["@gazebo browse~~- <object-name> gui|server"]
@@ -21,6 +19,8 @@ graph LR
 
     classDef folder fill:#999,stroke:#333,stroke-width:2px;
 ```
+
+--table--
 
 ---
 
