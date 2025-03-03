@@ -7,6 +7,7 @@ function blue_flie_gazebo_browse() {
     local do_download=$(abcli_option_int "$options" download $(abcli_not $do_dryrun))
     local do_upload=$(abcli_option_int "$options" upload $(abcli_not $do_dryrun))
     local filename=$(abcli_option "$options" filename world.sdf)
+    local ingest_pictures=$(abcli_option_int "$options" pictures 1)
 
     if [[ "$do_install" == 1 ]]; then
         blue_flie_gazebo_install
@@ -18,8 +19,8 @@ function blue_flie_gazebo_browse() {
     mkdir -pv $object_path
 
     local browse_options=$3
-    local do_gui=$(abcli_option_int "$browse_options" gui 1)
-    local do_server=$(abcli_option_int "$browse_options" server $(abcli_not $do_gui))
+    local do_server=$(abcli_option_int "$browse_options" server 0)
+    local do_gui=$(abcli_option_int "$browse_options" gui $(abcli_not $do_server))
 
     [[ "$do_download" == 1 ]] &&
         abcli_download - $object_name
@@ -35,6 +36,15 @@ function blue_flie_gazebo_browse() {
         gz sim $mode $filename \
         "${@:4}"
     [[ $? -ne 0 ]] && return 1
+
+    [[ "$ingest_pictures" == 1 ]] &&
+        mv -v \
+            $HOME/.gz/gui/pictures/*.png \
+            $object_path
+
+    abcli_mlflow_tags_set \
+        $object_name \
+        contains=gazebo-simulation
 
     [[ "$do_upload" == 1 ]] &&
         abcli_upload - $object_name

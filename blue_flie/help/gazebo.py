@@ -7,10 +7,9 @@ def help_browse(
     tokens: List[str],
     mono: bool,
 ) -> str:
-    options = "".join(
-        [
-            xtra("dryrun,~download,filename=<filename.sdf>,install,~upload", mono=mono),
-        ]
+    options = xtra(
+        "dryrun,~download,filename=<filename.sdf>,install,~pictures,~upload",
+        mono=mono,
     )
 
     browse_options = "gui | server"
