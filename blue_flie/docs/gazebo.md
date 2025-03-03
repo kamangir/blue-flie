@@ -19,8 +19,6 @@ actor.sdf
 ...
 ```
 
-🔥
-
 ```bash
 runme() {
     local example_name=${1:-actor}
@@ -44,12 +42,14 @@ runme() {
 runme actor
 ```
 
+🔥
 
-[sim-actor-2025-03-02-0u09ml](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-actor-2025-03-02-0u09ml.tar.gz)
+
+[sim-actor-2025-03-03-oanpvf](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-actor-2025-03-03-oanpvf.tar.gz)
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-actor.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-actor-2025-03-02-0u09ml/sim-actor-2025-03-02-0u09ml.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-actor.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-actor-2025-03-03-oanpvf/sim-actor-2025-03-03-oanpvf.gif?raw=true) |
 
 ---
 

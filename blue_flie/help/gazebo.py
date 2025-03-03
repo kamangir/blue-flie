@@ -5,20 +5,42 @@ from blue_options.terminal import show_usage, xtra
 example_details = {"examples: https://github.com/gazebosim/gz-sim/examples/worlds/": []}
 
 
+def browse_options(
+    mono: bool,
+    cascade: bool = False,
+):
+    return "".join(
+        [
+            xtra(
+                "dryrun,",
+                mono=mono,
+            ),
+            (
+                ""
+                if cascade
+                else xtra(
+                    "~download,",
+                    mono=mono,
+                )
+            ),
+            xtra(
+                "filename=<filename.sdf>,~gif,install,~pictures,~upload",
+                mono=mono,
+            ),
+        ]
+    )
+
+
 def help_browse(
     tokens: List[str],
     mono: bool,
 ) -> str:
-    options = xtra(
-        "dryrun,~download,filename=<filename.sdf>,~gif,install,~pictures,~upload",
-        mono=mono,
-    )
 
     return show_usage(
         [
             "@gazebo",
             "browse",
-            f"[{options}]",
+            f"[{browse_options(mono=mono)}]",
             "[-|<object-name>]",
         ],
         "browse <object-name> in gazebo.",
@@ -39,6 +61,12 @@ def help_ingest(
             f"[{options}]",
             "<example-name>",
             "[-|<object-name>]",
+            "[browse,{}]".format(
+                browse_options(
+                    mono=mono,
+                    cascade=True,
+                )
+            ),
         ],
         "ingest <example-name> -> <object-name>.",
         example_details,

@@ -32,5 +32,12 @@ function blue_flie_gazebo_ingest() {
     [[ "$do_upload" == 1 ]] &&
         abcli_upload - $object_name
 
-    return 0
+    local browse_options=$4
+    local do_browse=$(abcli_option_int "$browse_options" browse 0)
+    [[ "$do_browse" == 0 ]] &&
+        return 0
+
+    blue_flie_gazebo_browse \
+        ~download,filename=$example_name.sdf,$browse_options \
+        $object_name
 }

@@ -19,8 +19,6 @@ actor.sdf
 ...
 ```
 
-🔥
-
 ```bash
 runme() {
     local example_name=${1:-actor}
@@ -44,7 +42,9 @@ runme() {
 runme actor
 ```
 
-set:::object_name sim-actor-2025-03-02-0u09ml
+🔥
+
+set:::object_name sim-actor-2025-03-03-oanpvf
 
 object:::get:::object_name
 
