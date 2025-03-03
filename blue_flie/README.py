@@ -30,7 +30,7 @@ items = README.Items(
         {
             "name": "blue-amo",
             "marquee": "https://github.com/kamangir/assets/blob/main/blue-amo-2025-02-03-zjs1ow/generating-frame-006.png?raw=true",
-            "description": "concept development with AI",
+            "description": "Concept development with AI",
             "url": "https://github.com/kamangir/blue-assistant/blob/main/blue_assistant/script/repository/blue_amo/README.md",
         },
     ]
