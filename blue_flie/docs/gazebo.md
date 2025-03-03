@@ -2,6 +2,8 @@
 
 ℹ️ Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).
 
+🔥
+
 ```bash
 @gazebo ingest list
 ```
@@ -53,3 +55,4 @@ runme wind
 
 - [round 1](./gazebo-01.md)
 - [round 2](./gazebo-02.md)
+- [round 3](./gazebo-03.md)
