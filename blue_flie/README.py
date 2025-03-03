@@ -11,8 +11,7 @@ items = README.Items(
     [
         {
             "name": "swarm simulation",
-            "marquee": "https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true",
-            "description": "Simulating harm/cost for swarms of AI IEDs.",
+            "marquee": "https://github.com/kamangir/assets/blob/main/gazebo-gif-1/gazebo-gif-1.gif?raw=true",
             "url": "./blue_flie/sim/docs",
         },
         {
@@ -24,7 +23,7 @@ items = README.Items(
         {
             "name": "blue-beast",
             "marquee": "https://github.com/waveshareteam/ugv_rpi/raw/main/media/UGV-Rover-details-23.jpg",
-            "description": "[UGV Beast PI ROS2](https://www.waveshare.com/wiki/UGV_Beast_PI_ROS2).",
+            "description": "[UGV Beast PI ROS2](https://www.waveshare.com/wiki/UGV_Beast_PI_ROS2)",
             "url": "https://github.com/kamangir/blue-rover/blob/main/blue_rover/docs/blue-beast.md",
         },
     ]
