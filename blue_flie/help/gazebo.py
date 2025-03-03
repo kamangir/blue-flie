@@ -2,6 +2,8 @@ from typing import List
 
 from blue_options.terminal import show_usage, xtra
 
+example_details = {"examples: https://github.com/gazebosim/gz-sim/examples/worlds/": []}
+
 
 def help_browse(
     tokens: List[str],
@@ -39,6 +41,7 @@ def help_ingest(
             "[-|<object-name>]",
         ],
         "ingest <example-name> -> <object-name>.",
+        example_details,
         mono=mono,
     )
 
@@ -54,6 +57,7 @@ def help_ingest_list(
             "list",
         ],
         "list gazebo examples.",
+        example_details,
         mono=mono,
     )
 

@@ -1,6 +1,6 @@
 # Swarm Simulation 🔥
 
-ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
+ℹ️ Simulating harm/cost for swarms of drone swarms with [Gazebo](https://gazebosim.org/home).
 
 ```bash
 @gazebo ingest list
@@ -23,23 +23,17 @@ actor.sdf
 
 ```bash
 runme() {
-    local example_name=${1:-tracked_vehicle_simple}
+    local example_name=${1:-actor}
 
     local object_name=sim-$example_name-$(@@timestamp)
 
     @gazebo \
         ingest - \
         $example_name \
-        $object_name
-
-    @open - \
-        $object_name
-
-    @gazebo browse - \
-        $object_name
+        $object_name \
+        browse
 
     # simulate and capture
-
     # Crtl+C
 
     @assets publish \
@@ -50,7 +44,7 @@ runme() {
 runme actor
 ```
 
-set:::object_name sim-actor-2025-03-02-0u09ml
+set:::object_name TBA
 
 object:::get:::object_name
 
