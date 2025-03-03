@@ -4,6 +4,7 @@ from blue_options.terminal import show_usage, xtra
 from abcli.help.generic import help_functions as generic_help_functions
 
 from blue_flie import ALIAS
+from blue_flie.help.gazebo import help_functions as help_gazebo
 from blue_flie.help.toolbelt import help_functions as help_toolbelt
 
 
@@ -29,6 +30,7 @@ help_functions = generic_help_functions(plugin_name=ALIAS)
 help_functions.update(
     {
         "browse": help_browse,
+        "gazebo": help_gazebo,
         "toolbelt": help_toolbelt,
     }
 )

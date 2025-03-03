@@ -11,7 +11,7 @@ setup(
     packages=[
         NAME,
         f"{NAME}.help",
-        f"{NAME}.sim",
+        f"{NAME}.gazebo",
     ],
     include_package_data=True,
     package_data={
