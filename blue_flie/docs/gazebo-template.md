@@ -44,7 +44,7 @@ runme() {
 runme actor
 ```
 
-set:::object_name TBA
+set:::object_name sim-actor-2025-03-02-0u09ml
 
 object:::get:::object_name
 
