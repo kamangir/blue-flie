@@ -12,7 +12,7 @@ items = README.Items(
         {
             "name": "swarm simulation",
             "marquee": "https://github.com/kamangir/assets/blob/main/gazebo-gif-1/gazebo-gif-1.gif?raw=true",
-            "description": "Simulating harm/cost for swarms of AI IEDs with [Gazebo](https://gazebosim.org/home).",
+            "description": "Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).",
             "url": "./blue_flie/docs/gazebo.md",
         },
         {

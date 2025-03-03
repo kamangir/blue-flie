@@ -1,6 +1,6 @@
-# Swarm Simulation 🔥
+# Swarm Simulation
 
-ℹ️ Simulating harm/cost for swarms of AI IEDs (D==Drone) with [Gazebo](https://gazebosim.org/home).
+ℹ️ Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).
 
 ```bash
 @gazebo ingest list
@@ -19,27 +19,19 @@ actor.sdf
 ...
 ```
 
-🔥
-
 ```bash
 runme() {
-    local example_name=${1:-tracked_vehicle_simple}
+    local example_name=${1:-actor}
 
     local object_name=sim-$example_name-$(@@timestamp)
 
     @gazebo \
         ingest - \
         $example_name \
-        $object_name
-
-    @open - \
-        $object_name
-
-    @gazebo browse - \
-        $object_name
+        $object_name \
+        browse
 
     # simulate and capture
-
     # Crtl+C
 
     @assets publish \
@@ -47,15 +39,15 @@ runme() {
         $object_name
 }
 
-runme actor
+runme wind
 ```
 
 
-[sim-actor-2025-03-02-0u09ml](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-actor-2025-03-02-0u09ml.tar.gz)
+[sim-wind-2025-03-03-de0n62](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-wind-2025-03-03-de0n62.tar.gz)
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-actor.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-actor-2025-03-02-0u09ml/sim-actor-2025-03-02-0u09ml.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-wind.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-wind-2025-03-03-de0n62/sim-wind-2025-03-03-de0n62.gif?raw=true) |
 
 ---
 
