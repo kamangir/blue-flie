@@ -27,6 +27,11 @@ items = README.Items(
             "description": "[UGV Beast PI ROS2](https://www.waveshare.com/wiki/UGV_Beast_PI_ROS2)",
             "url": "https://github.com/kamangir/blue-rover/blob/main/blue_rover/docs/blue-beast.md",
         },
+        {
+            "name": "blue-amo",
+            "marquee": "https://github.com/kamangir/assets/raw/main/blue-amo-2025-02-04-nwb6nc/stitching_the_frames-2.png?raw=true",
+            "url": "https://github.com/kamangir/blue-assistant/blob/main/blue_assistant/script/repository/blue_amo/README.md",
+        },
     ]
 )
 
