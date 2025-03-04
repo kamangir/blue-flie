@@ -28,6 +28,8 @@ function blue_flie_gazebo_browse() {
     if [[ "$abcli_is_github_workflow" == true ]]; then
         abcli_log_warning "will not run gazebo."
     else
+        abcli_log "running gazebo: $filename"
+
         pushd $object_path >/dev/null
         gz sim -s $filename &
         pid=$!

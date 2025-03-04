@@ -1,8 +1,6 @@
-# Swarm Simulation
+# Swarm Simulation - round 3
 
 ℹ️ Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).
-
-🔥
 
 ```bash
 @gazebo ingest list
@@ -44,16 +42,14 @@ runme() {
 runme wind
 ```
 
-set:::object_name sim-wind-2025-03-03-de0n62
 
-object:::get:::object_name
+[sim-wind-2025-03-03-de0n62](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-wind-2025-03-03-de0n62.tar.gz)
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo-wind.png | assets:::get:::object_name/get:::object_name.gif |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-wind.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-wind-2025-03-03-de0n62/sim-wind-2025-03-03-de0n62.gif?raw=true) |
 
 ---
 
 - [round 1](./gazebo-01.md)
 - [round 2](./gazebo-02.md)
-- [round 3](./gazebo-03.md)
