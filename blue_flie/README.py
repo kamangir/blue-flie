@@ -10,25 +10,25 @@ from blue_flie.help.functions import help_functions
 items = README.Items(
     [
         {
-            "name": "swarm simulation",
+            "name": "Swarm Simulation",
             "marquee": "https://github.com/kamangir/assets/blob/main/gazebo-gif-1/gazebo-gif-1.gif?raw=true",
             "description": "Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).",
             "url": "./blue_flie/docs/gazebo.md",
         },
         {
-            "name": "Crazyflie",
+            "name": "blue Crazy",
             "marquee": "https://www.bitcraze.io/images/documentation/overview/system_overview.jpg",
             "description": "[Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/)",
-            "url": "./blue_flie/docs/crazyflie.md",
+            "url": "./blue_flie/docs/blue-crazy.md",
         },
         {
-            "name": "blue-beast",
+            "name": "blue Beast",
             "marquee": "https://github.com/waveshareteam/ugv_rpi/raw/main/media/UGV-Rover-details-23.jpg",
             "description": "[UGV Beast PI ROS2](https://www.waveshare.com/wiki/UGV_Beast_PI_ROS2)",
             "url": "https://github.com/kamangir/blue-rover/blob/main/blue_rover/docs/blue-beast.md",
         },
         {
-            "name": "blue-amo",
+            "name": "blue Amo",
             "marquee": "https://github.com/kamangir/assets/blob/main/blue-amo-2025-02-03-zjs1ow/generating-frame-006.png?raw=true",
             "description": "Concept development with AI",
             "url": "https://github.com/kamangir/blue-assistant/blob/main/blue_assistant/script/repository/blue_amo/README.md",
@@ -59,14 +59,12 @@ def build():
                 "cols": 2,
                 "path": "..",
             },
-            {
-                "path": "docs/crazyflie.md",
-            },
         ]
         + [
             {
-                "path": f"docs/gazebo{suffix}.md",
+                "path": f"docs/{suffix}.md",
             }
-            for suffix in [""] + ["-{:02d}".format(index + 1) for index in range(3)]
+            for suffix in ["gazebo", "blue-crazy"]
+            + ["gazebo-{:02d}".format(index + 1) for index in range(3)]
         ]
     )
