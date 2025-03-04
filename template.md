@@ -12,9 +12,12 @@ graph LR
 
     gazebo_ingest_list["@gazebo ingest list"]
 
-    gazebo_ingest["@gazebo ingest~~- <example-name> <object-name> browse"]
+    gazebo_ingest_example["@gazebo ingest~~- example=<example-name> <object-name> browse"]
+
+    gazebo_ingest_fuel["@gazebo ingest~~- fuel=<fuel-name> <object-name> browse"]
 
     examples["examples"]:::folder
+    fuels["fuels"]:::folder
     object["📁 object"]:::folder
     UI["🖥️ UI"]:::folder
 
@@ -24,9 +27,13 @@ graph LR
 
     gazebo_ingest_list --> examples 
 
-    examples --> gazebo_ingest
-    gazebo_ingest --> object
-    gazebo_ingest --> gazebo_browse
+    examples --> gazebo_ingest_example
+    gazebo_ingest_example --> object
+    gazebo_ingest_example --> gazebo_browse
+
+    fuels --> gazebo_ingest_fuel
+    gazebo_ingest_fuel --> object
+    gazebo_ingest_fuel --> gazebo_browse
 
     classDef folder fill:#999,stroke:#333,stroke-width:2px;
 ```

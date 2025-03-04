@@ -6,8 +6,8 @@ example_details = {
     "examples: https://github.com/gazebosim/gz-sim/examples/worlds/": [],
 }
 
-zip_details = {
-    "zips: https://app.gazebosim.org/fuel": [],
+fuel_details = {
+    "fuel: https://app.gazebosim.org/fuel": [],
 }
 
 
@@ -65,7 +65,7 @@ def help_ingest(
             "@gazebo",
             "ingest",
             f"[{options}]",
-            "example=<example-name> | zip=<zip-name>",
+            "example=<example-name> | fuel=<fuel-name>",
             "[-|<object-name>]",
             "[browse,{}]".format(
                 browse_options(
@@ -77,7 +77,7 @@ def help_ingest(
         "ingest <example-name> -> <object-name>.",
         {
             **example_details,
-            **zip_details,
+            **fuel_details,
         },
         mono=mono,
     )

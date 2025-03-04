@@ -2,7 +2,7 @@
 
 ℹ️ Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).
 
-🔥
+## ingesting an example
 
 ```bash
 @gazebo ingest list
@@ -22,14 +22,14 @@ actor.sdf
 ```
 
 ```bash
-runme() {
+ingest_example() {
     local example_name=${1:-actor}
 
     local object_name=sim-$example_name-$(@@timestamp)
 
     @gazebo \
         ingest - \
-        $example_name \
+        example=$example_name \
         $object_name \
         browse
 
@@ -41,15 +41,49 @@ runme() {
         $object_name
 }
 
-runme wind
+ingest_example TBA
 ```
 
 
-[sim-wind-2025-03-03-de0n62](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-wind-2025-03-03-de0n62.tar.gz)
+[TBA](https://kamangir-public.s3.ca-central-1.amazonaws.com/TBA.tar.gz)
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-wind.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-wind-2025-03-03-de0n62/sim-wind-2025-03-03-de0n62.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-TBA.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/TBA/TBA.gif?raw=true) |
+
+## ingesting a fuel
+
+🔥
+
+```bash
+ingest_fuel() {
+    local fuel_name=${1:-TBA}
+
+    local object_name=sim-$fuel_name-$(@@timestamp)
+
+    @gazebo \
+        ingest - \
+        fuel=$fuel_name \
+        $object_name \
+        browse
+
+    # simulate and capture
+    # Crtl+C
+
+    @assets publish \
+        extensions=gif,push \
+        $object_name
+}
+
+ingest_example TBA
+```
+
+
+[TBA](https://kamangir-public.s3.ca-central-1.amazonaws.com/TBA.tar.gz)
+
+| | |
+|-|-|
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-TBA.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/TBA/TBA.gif?raw=true) |
 
 ---
 

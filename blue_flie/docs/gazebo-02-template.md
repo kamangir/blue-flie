@@ -28,7 +28,7 @@ runme() {
 
     @gazebo \
         ingest - \
-        $example_name \
+        example=$example_name \
         $object_name
 
     @open - \

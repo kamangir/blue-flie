@@ -12,9 +12,12 @@ graph LR
 
     gazebo_ingest_list["@gazebo<br>ingest<br>list"]
 
-    gazebo_ingest["@gazebo<br>ingest -<br>&lt;example-name&gt;<br>&lt;object-name&gt;<br>browse"]
+    gazebo_ingest_example["@gazebo<br>ingest -<br>example=&lt;example-name&gt;<br>&lt;object-name&gt;<br>browse"]
+
+    gazebo_ingest_fuel["@gazebo<br>ingest -<br>fuel=&lt;fuel-name&gt;<br>&lt;object-name&gt;<br>browse"]
 
     examples["examples"]:::folder
+    fuels["fuels"]:::folder
     object["📁 object"]:::folder
     UI["🖥️ UI"]:::folder
 
@@ -24,9 +27,13 @@ graph LR
 
     gazebo_ingest_list --> examples 
 
-    examples --> gazebo_ingest
-    gazebo_ingest --> object
-    gazebo_ingest --> gazebo_browse
+    examples --> gazebo_ingest_example
+    gazebo_ingest_example --> object
+    gazebo_ingest_example --> gazebo_browse
+
+    fuels --> gazebo_ingest_fuel
+    gazebo_ingest_fuel --> object
+    gazebo_ingest_fuel --> gazebo_browse
 
     classDef folder fill:#999,stroke:#333,stroke-width:2px;
 ```
@@ -41,4 +48,4 @@ graph LR
 
 [![pylint](https://github.com/kamangir/blue-flie/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-flie/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-flie/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-flie/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-flie.svg)](https://pypi.org/project/blue-flie/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/blue-flie)](https://pypistats.org/packages/blue-flie)
 
-built by 🌀 [`blue_options-4.227.1`](https://github.com/kamangir/awesome-bash-cli), based on 🦋 [`blue_flie-4.63.1`](https://github.com/kamangir/blue-flie).
+built by 🌀 [`blue_options-4.227.1`](https://github.com/kamangir/awesome-bash-cli), based on 🦋 [`blue_flie-4.64.1`](https://github.com/kamangir/blue-flie).
