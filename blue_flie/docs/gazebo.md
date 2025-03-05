@@ -41,15 +41,15 @@ ingest_example() {
         $object_name
 }
 
-ingest_example TBA
+ingest_example trajectory_follower
 ```
 
 
-[TBA](https://kamangir-public.s3.ca-central-1.amazonaws.com/TBA.tar.gz)
+[sim-trajectory_follower-2025-03-04-qqdshf](https://kamangir-public.s3.ca-central-1.amazonaws.com/sim-trajectory_follower-2025-03-04-qqdshf.tar.gz)
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-TBA.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/TBA/TBA.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-trajectory_follower.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/sim-trajectory_follower-2025-03-04-qqdshf/sim-trajectory_follower-2025-03-04-qqdshf.gif?raw=true) |
 
 ## ingesting a fuel
 

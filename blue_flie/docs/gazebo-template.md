@@ -41,16 +41,16 @@ ingest_example() {
         $object_name
 }
 
-ingest_example TBA
+ingest_example trajectory_follower
 ```
 
-set:::example_object_name TBA
+set:::example_object_name sim-trajectory_follower-2025-03-04-qqdshf
 
 object:::get:::example_object_name
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo-TBA.png | assets:::get:::example_object_name/get:::example_object_name.gif |
+| assets:::blue-flie/gazebo-trajectory_follower.png | assets:::get:::example_object_name/get:::example_object_name.gif |
 
 ## ingesting a fuel
 
