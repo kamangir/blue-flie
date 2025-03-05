@@ -60,12 +60,14 @@ def help_ingest(
 ) -> str:
     options = xtra("dryrun,~upload", mono=mono)
 
+    source_options = "example=<example-name> | fuel=<fuel-name>"
+
     return show_usage(
         [
             "@gazebo",
             "ingest",
             f"[{options}]",
-            "example=<example-name> | fuel=<fuel-name>",
+            f"[{source_options}]",
             "[-|<object-name>]",
             "[browse,{}]".format(
                 browse_options(

@@ -8,6 +8,6 @@ function test_blue_flie_gazebo_ingest() {
     abcli_eval ,$options \
         blue_flie_gazebo_ingest \
         ~upload,$options \
-        actor \
+        example=actor \
         $object_name
 }
