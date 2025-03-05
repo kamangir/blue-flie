@@ -57,7 +57,7 @@ ingest_example trajectory_follower
 
 ```bash
 ingest_fuel() {
-    local fuel_name=${1:-TBA}
+    local fuel_name=${1:-tugbot_depot}
 
     local object_name=sim-$fuel_name-$(@@timestamp)
 
@@ -75,15 +75,15 @@ ingest_fuel() {
         $object_name
 }
 
-ingest_example TBA
+ingest_fuel tugbot_depot
 ```
 
 
-[TBA](https://kamangir-public.s3.ca-central-1.amazonaws.com/TBA.tar.gz)
+[gazebo-sim-tugbot_depot-2025-03-04-txe45k](https://kamangir-public.s3.ca-central-1.amazonaws.com/gazebo-sim-tugbot_depot-2025-03-04-txe45k.tar.gz)
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-TBA.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/TBA/TBA.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-tugbot_depot.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/gazebo-sim-tugbot_depot-2025-03-04-txe45k/gazebo-sim-tugbot_depot-2025-03-04-txe45k.gif?raw=true) |
 
 ---
 

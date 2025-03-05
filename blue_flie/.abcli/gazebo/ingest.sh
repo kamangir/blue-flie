@@ -35,7 +35,7 @@ function blue_flie_gazebo_ingest() {
         abcli_log "ingesting: fuels/$fuel_name -> $object_name ..."
         tags="$tags,fuel_name=$fuel_name"
 
-        local filename=$(find "$HOME/Downloads/" -name '$fuel_name*.zip' -print | head -n 1)
+        local filename=$(find "$HOME/Downloads/" -name $fuel_name'*.zip' -print | head -n 1)
         filename=$(basename "$filename")
         if [[ -z "$filename" ]]; then
             abcli_log_error "fuel not found."
@@ -46,7 +46,8 @@ function blue_flie_gazebo_ingest() {
             $HOME/Downloads/$filename \
             $object_path/
 
-        unzip $filename
+        unzip $object_path/$filename \
+            -d $object_path
     else
         abcli_log_error "neither example, nor fuel found"
         return 1
@@ -65,6 +66,6 @@ function blue_flie_gazebo_ingest() {
         return 0
 
     blue_flie_gazebo_browse \
-        ~download,filename=$example_name.sdf,$browse_options \
+        ~download,$browse_options \
         $object_name
 }

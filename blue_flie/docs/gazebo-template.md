@@ -58,7 +58,7 @@ object:::get:::example_object_name
 
 ```bash
 ingest_fuel() {
-    local fuel_name=${1:-TBA}
+    local fuel_name=${1:-tugbot_depot}
 
     local object_name=sim-$fuel_name-$(@@timestamp)
 
@@ -76,16 +76,16 @@ ingest_fuel() {
         $object_name
 }
 
-ingest_example TBA
+ingest_fuel tugbot_depot
 ```
 
-set:::fuel_object_name TBA
+set:::fuel_object_name gazebo-sim-tugbot_depot-2025-03-04-txe45k
 
 object:::get:::fuel_object_name
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo-TBA.png | assets:::get:::fuel_object_name/get:::fuel_object_name.gif |
+| assets:::blue-flie/gazebo-tugbot_depot.png | assets:::get:::fuel_object_name/get:::fuel_object_name.gif |
 
 ---
 
