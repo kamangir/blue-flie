@@ -18,13 +18,13 @@ items = README.Items(
         {
             "name": "blue Crazy",
             "marquee": "https://www.bitcraze.io/images/documentation/overview/system_overview.jpg",
-            "description": "[Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/)",
+            "description": "based on [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/)",
             "url": "./blue_flie/docs/blue-crazy.md",
         },
         {
             "name": "blue Beast",
             "marquee": "https://github.com/waveshareteam/ugv_rpi/raw/main/media/UGV-Rover-details-23.jpg",
-            "description": "[UGV Beast PI ROS2](https://www.waveshare.com/wiki/UGV_Beast_PI_ROS2)",
+            "description": "based on [UGV Beast PI ROS2](https://www.waveshare.com/wiki/UGV_Beast_PI_ROS2)",
             "url": "https://github.com/kamangir/blue-rover/blob/main/blue_rover/docs/blue-beast.md",
         },
         {
