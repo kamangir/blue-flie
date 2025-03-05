@@ -2,7 +2,13 @@ from typing import List
 
 from blue_options.terminal import show_usage, xtra
 
-example_details = {"examples: https://github.com/gazebosim/gz-sim/examples/worlds/": []}
+example_details = {
+    "examples: https://github.com/gazebosim/gz-sim/examples/worlds/": [],
+}
+
+fuel_details = {
+    "fuel: https://app.gazebosim.org/fuel": [],
+}
 
 
 def browse_options(
@@ -54,12 +60,14 @@ def help_ingest(
 ) -> str:
     options = xtra("dryrun,~upload", mono=mono)
 
+    source_options = "example=<example-name> | fuel=<fuel-name>"
+
     return show_usage(
         [
             "@gazebo",
             "ingest",
             f"[{options}]",
-            "<example-name>",
+            f"[{source_options}]",
             "[-|<object-name>]",
             "[browse,{}]".format(
                 browse_options(
@@ -69,7 +77,10 @@ def help_ingest(
             ),
         ],
         "ingest <example-name> -> <object-name>.",
-        example_details,
+        {
+            **example_details,
+            **fuel_details,
+        },
         mono=mono,
     )
 
@@ -85,7 +96,9 @@ def help_ingest_list(
             "list",
         ],
         "list gazebo examples.",
-        example_details,
+        {
+            **example_details,
+        },
         mono=mono,
     )
 

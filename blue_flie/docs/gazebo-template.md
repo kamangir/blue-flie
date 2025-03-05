@@ -2,6 +2,8 @@
 
 ℹ️ Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).
 
+## ingesting an example
+
 ```bash
 @gazebo ingest list
 ```
@@ -20,14 +22,14 @@ actor.sdf
 ```
 
 ```bash
-runme() {
+ingest_example() {
     local example_name=${1:-actor}
 
     local object_name=sim-$example_name-$(@@timestamp)
 
     @gazebo \
         ingest - \
-        $example_name \
+        example=$example_name \
         $object_name \
         browse
 
@@ -39,18 +41,52 @@ runme() {
         $object_name
 }
 
-runme wind
+ingest_example trajectory_follower
 ```
 
-set:::object_name sim-wind-2025-03-03-de0n62
+set:::example_object_name sim-trajectory_follower-2025-03-04-qqdshf
 
-object:::get:::object_name
+object:::get:::example_object_name
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo-wind.png | assets:::get:::object_name/get:::object_name.gif |
+| assets:::blue-flie/gazebo-trajectory_follower.png | assets:::get:::example_object_name/get:::example_object_name.gif |
+
+## ingesting a fuel
+
+```bash
+ingest_fuel() {
+    local fuel_name=${1:-tugbot_depot}
+
+    local object_name=sim-$fuel_name-$(@@timestamp)
+
+    @gazebo \
+        ingest - \
+        fuel=$fuel_name \
+        $object_name \
+        browse
+
+    # simulate and capture
+    # Crtl+C
+
+    @assets publish \
+        extensions=gif,push \
+        $object_name
+}
+
+ingest_fuel tugbot_depot
+```
+
+set:::fuel_object_name gazebo-sim-tugbot_depot-2025-03-04-txe45k
+
+object:::get:::fuel_object_name
+
+| | |
+|-|-|
+| assets:::blue-flie/gazebo-tugbot_depot.png | assets:::get:::fuel_object_name/get:::fuel_object_name.gif |
 
 ---
 
 - [round 1](./gazebo-01.md)
 - [round 2](./gazebo-02.md)
+- [round 3](./gazebo-03.md)
