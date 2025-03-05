@@ -85,7 +85,7 @@ object:::get:::fuel_object_name
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo-tugbot_depot.png | assets:::get:::fuel_object_name/get:::fuel_object_name.gif |
+| assets:::blue-flie/gazebo-tugbot_depot.png | assets:::get:::fuel_object_name/get:::fuel_object_name-2X.gif |
 
 ---
 
