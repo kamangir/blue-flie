@@ -54,8 +54,6 @@ object:::get:::example_object_name
 
 ## ingesting a fuel
 
-🔥
-
 ```bash
 ingest_fuel() {
     local fuel_name=${1:-tugbot_depot}
@@ -85,7 +83,7 @@ object:::get:::fuel_object_name
 
 | | |
 |-|-|
-| assets:::blue-flie/gazebo-tugbot_depot.png | assets:::get:::fuel_object_name/get:::fuel_object_name-2X.gif |
+| assets:::blue-flie/gazebo-tugbot_depot.png | assets:::get:::fuel_object_name/get:::fuel_object_name.gif |
 
 ---
 

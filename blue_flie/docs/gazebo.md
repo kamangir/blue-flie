@@ -53,8 +53,6 @@ ingest_example trajectory_follower
 
 ## ingesting a fuel
 
-🔥
-
 ```bash
 ingest_fuel() {
     local fuel_name=${1:-tugbot_depot}
@@ -83,7 +81,7 @@ ingest_fuel tugbot_depot
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-tugbot_depot.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/gazebo-sim-tugbot_depot-2025-03-04-txe45k/gazebo-sim-tugbot_depot-2025-03-04-txe45k-2X.gif?raw=true) |
+| ![image](https://github.com/kamangir/assets/blob/main/blue-flie/gazebo-tugbot_depot.png?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/gazebo-sim-tugbot_depot-2025-03-04-txe45k/gazebo-sim-tugbot_depot-2025-03-04-txe45k.gif?raw=true) |
 
 ---
 
