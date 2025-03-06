@@ -78,7 +78,7 @@ list_of_columns = {
     "cost_dollar": "cost",
     "weight_gr": "weight",
     "build_year": "build",
-    "comments": "",
+    "comments": "comments",
     "purchase_link": "🛒",
 }
 items = list(list_of_columns.values())
