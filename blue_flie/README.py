@@ -18,6 +18,12 @@ items = README.Items(
             "url": "./blue_flie/docs/gazebo.md",
         },
         {
+            "name": "FPV",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-flie/fpv/35in-160.png?raw=true",
+            "description": "FPVs available in the market",
+            "url": "./blue_flie/docs/fpv.md",
+        },
+        {
             "name": "blue Crazy",
             "marquee": "https://www.bitcraze.io/images/documentation/overview/system_overview.jpg",
             "description": "based on [Crazyflie 2.1 Brushless](https://www.bitcraze.io/products/crazyflie-2-1-brushless/)",
