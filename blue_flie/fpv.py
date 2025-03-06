@@ -65,10 +65,13 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
 
         if what == "marquee":
             items += [
-                f"![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/{build_name}.png?raw=true)"
+                "[![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/{}.png?raw=true)]({})".format(
+                    build_name,
+                    list_of_builds[build_name]["url"],
+                )
             ]
         elif what == "url":
-            items += [""]
+            items += [list_of_builds[build_name]["url"]]
         elif what == "size_in":
             items += [""]
         elif what == "cost_dollar":
