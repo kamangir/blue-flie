@@ -36,23 +36,20 @@ list_of_builds = {
         "size_in": 9.0,
         "build_year": 2025,
     },
-    "template": {
-        "url": "TBA",
-        "size_in": 0.0,
-        "cost_dollar": 0.0,
-        "weight_gr": 0.0,
+    "unknown": {
+        "url": "https://www.youtube.com/watch?v=u_ArriXbrR0",
+        "weight_gr": 25.0,
+        "build_year": 2024,
     },
-    "template": {
-        "url": "TBA",
-        "size_in": 0.0,
-        "cost_dollar": 0.0,
-        "weight_gr": 0.0,
+    "unknown-2": {
+        "url": "https://www.youtube.com/watch?v=SfFl_-tof4Y",
+        "weight_gr": 371,
+        "build_year": 2021,
     },
-    "template": {
-        "url": "TBA",
-        "size_in": 0.0,
-        "cost_dollar": 0.0,
-        "weight_gr": 0.0,
+    "7-in-2": {
+        "url": "https://www.youtube.com/watch?v=d2NiH5ciV5c",
+        "size_in": 7.0,
+        "build_year": 2023,
     },
 }
 
@@ -87,7 +84,7 @@ for build_name in list_of_builds:
         elif what == "url":
             items += [build["url"]]
         elif what == "size_in":
-            items += ['{:.1f}"'.format(build["size_in"])]
+            items += ['{:.1f}"'.format(build["size_in"]) if "size_in" in build else "?"]
         elif what == "cost_dollar":
             items += [
                 (
