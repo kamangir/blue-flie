@@ -31,11 +31,10 @@ list_of_builds = {
         "cost_dollar": 150.0,
         "build_year": 2024,
     },
-    "template": {
-        "url": "TBA",
-        "size_in": 0.0,
-        "cost_dollar": 0.0,
-        "weight_gr": 0.0,
+    "9-in": {
+        "url": "https://www.youtube.com/watch?v=o8_5ppHROJ4",
+        "size_in": 9.0,
+        "build_year": 2025,
     },
     "template": {
         "url": "TBA",
