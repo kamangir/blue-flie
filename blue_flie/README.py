@@ -5,7 +5,7 @@ from blue_objects import file, README
 
 from blue_flie import NAME, VERSION, ICON, REPO_NAME
 from blue_flie.fpv import items as fpv_items
-from blue_flie.fpv import columns as fpv_columns
+from blue_flie.fpv import list_of_columns as fpv_columns
 from blue_flie.help.functions import help_functions
 
 

@@ -57,7 +57,7 @@ build_count = len(
     [build_name for build_name in list_of_builds if build_name != "template"]
 )
 
-columns = {
+list_of_columns = {
     "marquee": "",
     "url": "",
     "size_in": "size",
@@ -67,24 +67,24 @@ columns = {
     "comments": "",
     "purchase_link": "🛒",
 }
-items = list(columns.values())
+items = list(list_of_columns.values())
 for build_name, build in list_of_builds.items():
     if build_name == "template":
         continue
 
-    for what in columns.keys():
-        if what == "marquee":
+    for column in list_of_columns:
+        if column == "marquee":
             items += [
                 "[![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/{}.png?raw=true)]({})".format(
                     build_name,
                     build["url"],
                 )
             ]
-        elif what == "url":
+        elif column == "url":
             items += [build["url"]]
-        elif what == "size_in":
+        elif column == "size_in":
             items += ['{:.1f}"'.format(build["size_in"]) if "size_in" in build else "?"]
-        elif what == "cost_dollar":
+        elif column == "cost_dollar":
             items += [
                 (
                     "${:.1f}".format(build["cost_dollar"])
@@ -92,7 +92,7 @@ for build_name, build in list_of_builds.items():
                     else "?"
                 )
             ]
-        elif what == "weight_gr":
+        elif column == "weight_gr":
             items += [
                 (
                     "{:.1f} gr".format(build["weight_gr"])
@@ -100,9 +100,9 @@ for build_name, build in list_of_builds.items():
                     else "?"
                 )
             ]
-        elif what == "build_year":
+        elif column == "build_year":
             items += [str(build.get("build_year", ""))]
-        elif what == "purchase_link":
+        elif column == "purchase_link":
             items += [
                 (
                     "[🛒]({})".format(build["purchase_link"])
@@ -110,5 +110,5 @@ for build_name, build in list_of_builds.items():
                     else ""
                 )
             ]
-        elif what == "comments":
+        elif column == "comments":
             items += [build.get("comments", "")]
