@@ -15,6 +15,7 @@ list_of_builds = {
         "size_in": 5.0,
         "build_year": 2023,
         "weight_gr": 767.0,
+        "comments": "Amazon links ⚠️",
     },
     "template": {
         "url": "TBA",
@@ -87,5 +88,18 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
             ]
         elif what == "comments":
             items += [
-                "build {}".format(build["build_year"]) if "build_year" in build else ""
+                ", ".join(
+                    [
+                        thing
+                        for thing in [
+                            (
+                                "build {}".format(build["build_year"])
+                                if "build_year" in build
+                                else ""
+                            )
+                        ]
+                        + [build.get("comments", "")]
+                        if thing
+                    ]
+                )
             ]
