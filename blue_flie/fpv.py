@@ -50,6 +50,7 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
             "size_in": "size",
             "cost_dollar": "cost",
             "weight_gr": "weight",
+            "build_year": "build",
             "comments": "",
         }[what]
     ]
@@ -86,20 +87,14 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
                     else "?"
                 )
             ]
-        elif what == "comments":
+        elif what == "build_year":
             items += [
-                ", ".join(
-                    [
-                        thing
-                        for thing in [
-                            (
-                                "build {}".format(build["build_year"])
-                                if "build_year" in build
-                                else ""
-                            )
-                        ]
-                        + [build.get("comments", "")]
-                        if thing
-                    ]
+                (
+                    "build {}".format(build["build_year"])
+                    if "build_year" in build
+                    else "?"
                 )
             ]
+
+        elif what == "comments":
+            items += [build.get("comments", "")]
