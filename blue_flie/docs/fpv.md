@@ -7,5 +7,5 @@
 | size | 2.0" | 3.5" | 5.0" |
 | cost | $100.0 | $160.0 | $? |
 | weight | ? | 250.0 gr | 767.0 gr |
-|  | build  | build  | build 2023 |
+|  |  |  | build 2023 |
 

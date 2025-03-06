@@ -87,5 +87,5 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
             ]
         elif what == "comments":
             items += [
-                "build {}".format(build["build_year"] if "build_year" in build else "")
+                "build {}".format(build["build_year"]) if "build_year" in build else ""
             ]
