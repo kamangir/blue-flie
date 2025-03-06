@@ -4,6 +4,8 @@ from blue_options.help.functions import get_help
 from blue_objects import file, README
 
 from blue_flie import NAME, VERSION, ICON, REPO_NAME
+from blue_flie.fpv import items as fpv_items
+from blue_flie.fpv import build_count as fpv_build_count
 from blue_flie.help.functions import help_functions
 
 
@@ -58,6 +60,11 @@ def build():
                 "items": items,
                 "cols": 2,
                 "path": "..",
+            },
+            {
+                "items": fpv_items,
+                "cols": fpv_build_count + 1,
+                "path": "docs/fpv.md",
             },
         ]
         + [
