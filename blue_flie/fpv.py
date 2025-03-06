@@ -13,7 +13,7 @@ list_of_builds = {
     "5in": {
         "url": "https://www.youtube.com/watch?v=XB6b0HrDGeA",
         "size_in": 5.0,
-        "year": 2023,
+        "build_year": 2023,
         "weight_gr": 767.0,
     },
     "template": {
@@ -54,6 +54,7 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
     ]
 
     for build_name in list_of_builds:
+        build = list_of_builds[build_name]
         if build_name == "template":
             continue
 
@@ -61,28 +62,30 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
             items += [
                 "[![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/{}.png?raw=true)]({})".format(
                     build_name,
-                    list_of_builds[build_name]["url"],
+                    build["url"],
                 )
             ]
         elif what == "url":
-            items += [list_of_builds[build_name]["url"]]
+            items += [build["url"]]
         elif what == "size_in":
-            items += ['{:.1f}"'.format(list_of_builds[build_name]["size_in"])]
+            items += ['{:.1f}"'.format(build["size_in"])]
         elif what == "cost_dollar":
             items += [
                 (
-                    "${:.1f}".format(list_of_builds[build_name]["cost_dollar"])
-                    if "cost_dollar" in list_of_builds[build_name]
+                    "${:.1f}".format(build["cost_dollar"])
+                    if "cost_dollar" in build
                     else "$?"
                 )
             ]
         elif what == "weight_gr":
             items += [
                 (
-                    "{:.1f} gr".format(list_of_builds[build_name]["weight_gr"])
-                    if "weight_gr" in list_of_builds[build_name]
+                    "{:.1f} gr".format(build["weight_gr"])
+                    if "weight_gr" in build
                     else "?"
                 )
             ]
         elif what == "comments":
-            items += [""]
+            items += [
+                "build {}".format(build["build_year"] if "build_year" in build else "")
+            ]
