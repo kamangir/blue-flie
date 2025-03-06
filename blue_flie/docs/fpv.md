@@ -4,7 +4,9 @@
 | --- | --- | --- |
 |  |  |  |
 |  |  |  |
-|  | size (inches) |  |
-| cost ($ |  | weight (g) |
+|  |  |  |
+| size (inches) |  |  |
+| cost ($ |  |  |
+| weight (g) |  |  |
 |  |  |  |
 

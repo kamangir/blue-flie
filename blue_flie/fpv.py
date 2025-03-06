@@ -59,15 +59,19 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
         }[what]
     ]
 
-    if what == "marquee":
-        items += [""]
-    elif what == "url":
-        items += [""]
-    elif what == "size_in":
-        items += [""]
-    elif what == "cost_dollar":
-        items += [""]
-    elif what == "weight_gr":
-        items += [""]
-    elif what == "comments":
-        items += [""]
+    for build_name in list_of_builds:
+        if build_name == "template":
+            continue
+
+        if what == "marquee":
+            items += [""]
+        elif what == "url":
+            items += [""]
+        elif what == "size_in":
+            items += [""]
+        elif what == "cost_dollar":
+            items += [""]
+        elif what == "weight_gr":
+            items += [""]
+        elif what == "comments":
+            items += [""]
