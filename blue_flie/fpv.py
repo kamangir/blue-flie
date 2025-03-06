@@ -37,6 +37,24 @@ list_of_builds = {
         "cost_dollar": 0.0,
         "weight_gr": 0.0,
     },
+    "template": {
+        "url": "TBA",
+        "size_in": 0.0,
+        "cost_dollar": 0.0,
+        "weight_gr": 0.0,
+    },
+    "template": {
+        "url": "TBA",
+        "size_in": 0.0,
+        "cost_dollar": 0.0,
+        "weight_gr": 0.0,
+    },
+    "template": {
+        "url": "TBA",
+        "size_in": 0.0,
+        "cost_dollar": 0.0,
+        "weight_gr": 0.0,
+    },
 }
 
 build_count = len(

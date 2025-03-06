@@ -19,7 +19,7 @@ items = README.Items(
         },
         {
             "name": "FPV",
-            "marquee": "https://github.com/kamangir/assets/blob/main/blue-flie/fpv/35in-160.png?raw=true",
+            "marquee": "https://github.com/kamangir/assets/raw/main/blue-flie/fpv/7-in.png?raw=true",
             "description": "FPVs available in the market",
             "url": "./blue_flie/docs/fpv.md",
         },
