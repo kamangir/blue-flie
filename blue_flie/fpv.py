@@ -68,8 +68,7 @@ columns = {
     "purchase_link": "🛒",
 }
 items = list(columns.values())
-for build_name in list_of_builds:
-    build = list_of_builds[build_name]
+for build_name, build in list_of_builds.items():
     if build_name == "template":
         continue
 
