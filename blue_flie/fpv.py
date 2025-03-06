@@ -51,6 +51,19 @@ list_of_builds = {
         "size_in": 7.0,
         "build_year": 2023,
     },
+    "rpi-1": {
+        "build_year": 2025,
+        "url": "https://www.instagram.com/p/DGz2mI9NHGc",
+    },
+    "template": {
+        "build_year": 0,
+        "comments": "",
+        "cost_dollar": 0.0,
+        "purchase_link": "",
+        "size_in": 0.0,
+        "url": "",
+        "weight_gr": 0.0,
+    },
 }
 
 build_count = len(
