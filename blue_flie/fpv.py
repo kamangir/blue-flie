@@ -25,11 +25,11 @@ list_of_builds = {
         "build_year": 2024,
         "purchase_link": "https://www.aliexpress.com/item/1005005105185798.html",
     },
-    "template": {
-        "url": "TBA",
-        "size_in": 0.0,
-        "cost_dollar": 0.0,
-        "weight_gr": 0.0,
+    "7-in": {
+        "url": "https://www.youtube.com/watch?v=0jOUTYBneVo",
+        "size_in": 7.0,
+        "cost_dollar": 150.0,
+        "build_year": 2024,
     },
     "template": {
         "url": "TBA",
