@@ -5,8 +5,8 @@
 |  |  |  |
 |  |  |  |
 |  |  |  |
-| size (inches) |  |  |
-| cost ($ |  |  |
+| size (") |  |  |
+| cost ($) |  |  |
 | weight (g) |  |  |
 |  |  |  |
 

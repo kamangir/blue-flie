@@ -52,8 +52,8 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
         {
             "marquee": "",
             "url": "",
-            "size_in": "size (inches)",
-            "cost_dollar": "cost ($",
+            "size_in": 'size (")',
+            "cost_dollar": "cost ($)",
             "weight_gr": "weight (g)",
             "comments": "",
         }[what]
