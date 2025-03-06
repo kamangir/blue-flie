@@ -64,7 +64,6 @@ def build():
         for readme in [
             {
                 "items": items,
-                "cols": 2,
                 "path": "..",
             },
             {
