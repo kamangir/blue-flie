@@ -7,6 +7,6 @@
 |  | https://www.youtube.com/watch?v=MxG22nbBNvQ | https://www.youtube.com/watch?v=aXrrg48auhU |
 | size (") | 2.0 | 3.5 |
 | cost ($) | $100.0 | $160.0 |
-| weight (g) |  | 250.0 |
+| weight (g) | ? | 250.0 |
 |  |  |  |
 

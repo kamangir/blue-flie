@@ -75,7 +75,7 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
                 (
                     "{:.1f}".format(list_of_builds[build_name]["weight_gr"])
                     if "weight_gr" in list_of_builds[build_name]
-                    else ""
+                    else "?"
                 )
             ]
         elif what == "comments":
