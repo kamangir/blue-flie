@@ -43,35 +43,23 @@ build_count = len(
     [build_name for build_name in list_of_builds if build_name != "template"]
 )
 
-items = []
-for what in [
-    "marquee",
-    "url",
-    "size_in",
-    "cost_dollar",
-    "weight_gr",
-    "build_year",
-    "comments",
-    "purchase_link",
-]:
-    items += [
-        {
-            "marquee": "",
-            "url": "",
-            "size_in": "size",
-            "cost_dollar": "cost",
-            "weight_gr": "weight",
-            "build_year": "build",
-            "comments": "",
-            "purchase_link": "🛒",
-        }[what]
-    ]
+columns = {
+    "marquee": "",
+    "url": "",
+    "size_in": "size",
+    "cost_dollar": "cost",
+    "weight_gr": "weight",
+    "build_year": "build",
+    "comments": "",
+    "purchase_link": "🛒",
+}
+items = list(columns.keys())
+for build_name in list_of_builds:
+    build = list_of_builds[build_name]
+    if build_name == "template":
+        continue
 
-    for build_name in list_of_builds:
-        build = list_of_builds[build_name]
-        if build_name == "template":
-            continue
-
+    for what in columns.keys():
         if what == "marquee":
             items += [
                 "[![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/{}.png?raw=true)]({})".format(
