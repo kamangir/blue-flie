@@ -116,6 +116,6 @@ for build_name, build in list_of_builds.items():
         elif column == "build_year":
             items += [str(build.get("build_year", ""))]
         elif column == "purchase_link":
-            items += [build["purchase_link"] if "purchase_link" in build else ""]
+            items += [""]  # build["purchase_link"] if "purchase_link" in build else ""]
         elif column == "comments":
             items += [build.get("comments", "")]
