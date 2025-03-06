@@ -54,6 +54,7 @@ list_of_builds = {
     "rpi-1": {
         "build_year": 2025,
         "url": "https://www.instagram.com/p/DGz2mI9NHGc",
+        "comments": "Raspberry-Pi onboard 🧠",
     },
     "template": {
         "build_year": 0,

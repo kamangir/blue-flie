@@ -12,5 +12,5 @@
 | [![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/unknown.png?raw=true)](https://www.youtube.com/watch?v=u_ArriXbrR0) | https://www.youtube.com/watch?v=u_ArriXbrR0 | ? | ? | 25.0 gr | 2024 |  |  |
 | [![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/unknown-2.png?raw=true)](https://www.youtube.com/watch?v=SfFl_-tof4Y) | https://www.youtube.com/watch?v=SfFl_-tof4Y | ? | ? | 371.0 gr | 2021 |  |  |
 | [![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/7-in-2.png?raw=true)](https://www.youtube.com/watch?v=d2NiH5ciV5c) | https://www.youtube.com/watch?v=d2NiH5ciV5c | 7.0" | ? | ? | 2023 |  |  |
-| [![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/rpi-1.png?raw=true)](https://www.instagram.com/p/DGz2mI9NHGc) | https://www.instagram.com/p/DGz2mI9NHGc | ? | ? | ? | 2025 |  |  |
+| [![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/rpi-1.png?raw=true)](https://www.instagram.com/p/DGz2mI9NHGc) | https://www.instagram.com/p/DGz2mI9NHGc | ? | ? | ? | 2025 | Raspberry-Pi onboard 🧠 |  |
 
