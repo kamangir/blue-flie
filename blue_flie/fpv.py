@@ -22,6 +22,7 @@ list_of_builds = {
         "size_in": 5.0,
         "cost_dollar": 816.38,
         "weight_gr": 426,
+        "build_year": 2024,
         "purchase_link": "https://www.aliexpress.com/item/1005005105185798.html",
     },
     "template": {
@@ -51,6 +52,7 @@ for what in [
     "weight_gr",
     "build_year",
     "comments",
+    "purchase_link",
 ]:
     items += [
         {
@@ -61,6 +63,7 @@ for what in [
             "weight_gr": "weight",
             "build_year": "build",
             "comments": "",
+            "purchase_link": "🛒",
         }[what]
     ]
 
@@ -98,6 +101,13 @@ for what in [
             ]
         elif what == "build_year":
             items += [str(build.get("build_year", ""))]
-
+        elif what == "purchase_link":
+            items += [
+                (
+                    "[🛒]({})".format(build["purchase_link"])
+                    if "purchase_link" in build
+                    else ""
+                )
+            ]
         elif what == "comments":
             items += [build.get("comments", "")]
