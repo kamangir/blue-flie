@@ -65,7 +65,7 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
 
         if what == "marquee":
             items += [
-                f"https://github.com/kamangir/assets/blob/main/blue-flie/fpv/{build_name}.png?raw=true"
+                f"![image](https://github.com/kamangir/assets/blob/main/blue-flie/fpv/{build_name}.png?raw=true)"
             ]
         elif what == "url":
             items += [""]
