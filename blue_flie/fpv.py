@@ -84,7 +84,7 @@ for what in [
                 (
                     "${:.1f}".format(build["cost_dollar"])
                     if "cost_dollar" in build
-                    else "$?"
+                    else "?"
                 )
             ]
         elif what == "weight_gr":
@@ -96,13 +96,7 @@ for what in [
                 )
             ]
         elif what == "build_year":
-            items += [
-                (
-                    "build {}".format(build["build_year"])
-                    if "build_year" in build
-                    else "?"
-                )
-            ]
+            items += [str(build.get("build_year", ""))]
 
         elif what == "comments":
             items += [build.get("comments", "")]
