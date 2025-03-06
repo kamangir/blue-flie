@@ -42,7 +42,15 @@ build_count = len(
 )
 
 items = []
-for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"]:
+for what in [
+    "marquee",
+    "url",
+    "size_in",
+    "cost_dollar",
+    "weight_gr",
+    "build_year",
+    "comments",
+]:
     items += [
         {
             "marquee": "",
