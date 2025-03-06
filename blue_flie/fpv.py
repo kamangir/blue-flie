@@ -46,9 +46,9 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
         {
             "marquee": "",
             "url": "",
-            "size_in": 'size (")',
-            "cost_dollar": "cost ($)",
-            "weight_gr": "weight (g)",
+            "size_in": "size",
+            "cost_dollar": "cost",
+            "weight_gr": "weight",
             "comments": "",
         }[what]
     ]
@@ -67,13 +67,13 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
         elif what == "url":
             items += [list_of_builds[build_name]["url"]]
         elif what == "size_in":
-            items += ["{:.1f}".format(list_of_builds[build_name]["size_in"])]
+            items += ['{:.1f} "'.format(list_of_builds[build_name]["size_in"])]
         elif what == "cost_dollar":
             items += ["${:.1f}".format(list_of_builds[build_name]["cost_dollar"])]
         elif what == "weight_gr":
             items += [
                 (
-                    "{:.1f}".format(list_of_builds[build_name]["weight_gr"])
+                    "{:.1f} gr".format(list_of_builds[build_name]["weight_gr"])
                     if "weight_gr" in list_of_builds[build_name]
                     else "?"
                 )
