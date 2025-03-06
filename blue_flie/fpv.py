@@ -17,11 +17,12 @@ list_of_builds = {
         "weight_gr": 767.0,
         "comments": "Amazon links ⚠️",
     },
-    "template": {
-        "url": "TBA",
-        "size_in": 0.0,
-        "cost_dollar": 0.0,
-        "weight_gr": 0.0,
+    "5in-2": {
+        "url": "https://www.youtube.com/watch?v=zj90LK8XR68",
+        "size_in": 5.0,
+        "cost_dollar": 816.38,
+        "weight_gr": 426,
+        "purchase_link": "https://www.aliexpress.com/item/1005005105185798.html",
     },
     "template": {
         "url": "TBA",
