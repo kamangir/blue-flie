@@ -4,6 +4,8 @@ from blue_options.help.functions import get_help
 from blue_objects import file, README
 
 from blue_flie import NAME, VERSION, ICON, REPO_NAME
+from blue_flie.fpv import items as fpv_items
+from blue_flie.fpv import list_of_columns as fpv_columns
 from blue_flie.help.functions import help_functions
 
 
@@ -14,6 +16,12 @@ items = README.Items(
             "marquee": "https://github.com/kamangir/assets/blob/main/gazebo-gif-1/gazebo-gif-1.gif?raw=true",
             "description": "Simulating harm/cost for drone swarms with [Gazebo](https://gazebosim.org/home).",
             "url": "./blue_flie/docs/gazebo.md",
+        },
+        {
+            "name": "FPV",
+            "marquee": "https://github.com/kamangir/assets/raw/main/blue-flie/fpv/7-in.png?raw=true",
+            "description": "FPVs available in the market",
+            "url": "./blue_flie/docs/fpv.md",
         },
         {
             "name": "blue Crazy",
@@ -56,8 +64,12 @@ def build():
         for readme in [
             {
                 "items": items,
-                "cols": 2,
                 "path": "..",
+            },
+            {
+                "items": fpv_items,
+                "cols": len(fpv_columns),
+                "path": "docs/fpv.md",
             },
         ]
         + [
