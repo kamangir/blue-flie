@@ -4,17 +4,17 @@ list_of_builds = {
         "size_in": 2.0,
         "cost_dollar": 100.0,
     },
-    "35in-160": {
+    "3_5in-160": {
         "url": "https://www.youtube.com/watch?v=aXrrg48auhU",
         "size_in": 3.5,
         "cost_dollar": 160.0,
         "weight_gr": 250.0,
     },
-    "template": {
-        "url": "TBA",
-        "size_in": 0.0,
-        "cost_dollar": 0.0,
-        "weight_gr": 0.0,
+    "5in": {
+        "url": "https://www.youtube.com/watch?v=XB6b0HrDGeA",
+        "size_in": 5.0,
+        "year": 2023,
+        "weight_gr": 767.0,
     },
     "template": {
         "url": "TBA",
@@ -67,9 +67,15 @@ for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"
         elif what == "url":
             items += [list_of_builds[build_name]["url"]]
         elif what == "size_in":
-            items += ['{:.1f} "'.format(list_of_builds[build_name]["size_in"])]
+            items += ['{:.1f}"'.format(list_of_builds[build_name]["size_in"])]
         elif what == "cost_dollar":
-            items += ["${:.1f}".format(list_of_builds[build_name]["cost_dollar"])]
+            items += [
+                (
+                    "${:.1f}".format(list_of_builds[build_name]["cost_dollar"])
+                    if "cost_dollar" in list_of_builds[build_name]
+                    else "$?"
+                )
+            ]
         elif what == "weight_gr":
             items += [
                 (
