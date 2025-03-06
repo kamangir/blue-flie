@@ -40,7 +40,7 @@ build_count = len(
     [build_name for build_name in list_of_builds if build_name != "template"]
 )
 
-items = (build_count + 1) * [""]
+items = []
 for what in ["marquee", "url", "size_in", "cost_dollar", "weight_gr", "comments"]:
     items += [
         {
